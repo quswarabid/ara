@@ -1,0 +1,540 @@
+# testlist generated on 2023-11-27 12:36 GMT
+/home/quswarabid/ara/apps/riscof/test_suite/vadc.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vadc.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vadc
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vadc.S
+/home/quswarabid/ara/apps/riscof/test_suite/vadd.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vadd.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vadd
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vadd.S
+/home/quswarabid/ara/apps/riscof/test_suite/vand.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vand.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vand
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vand.S
+/home/quswarabid/ara/apps/riscof/test_suite/vdiv.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vdiv.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vdiv
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vdiv.S
+/home/quswarabid/ara/apps/riscof/test_suite/vdivu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vdivu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vdivu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vdivu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmacc.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmacc.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmacc
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmacc.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmadc.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmadc.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmadc
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmadc.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmadd.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmadd.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmadd
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmadd.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmax.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmax.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmax
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmax.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmaxu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmaxu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmaxu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmaxu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmin.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmin.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmin
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmin.S
+/home/quswarabid/ara/apps/riscof/test_suite/vminu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vminu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vminu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vminu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsbc.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsbc.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsbc
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsbc.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmseq.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmseq.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmseq
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmseq.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsgt.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsgt.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsgt
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsgt.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsgtu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsgtu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsgtu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsgtu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsle.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsle.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsle
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsle.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsleu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsleu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsleu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsleu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmslt.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmslt.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmslt
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmslt.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsltu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsltu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsltu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsltu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmsne.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmsne.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmsne
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmsne.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmul.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmul.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmul
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmul.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmulh.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmulh.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmulh
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmulh.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmulhsu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmulhsu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmulhsu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmulhsu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vmulhu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vmulhu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vmulhu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vmulhu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vor.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vor.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vor
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vor.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredand.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredand.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredand
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredand.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredmax.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredmax.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredmax
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredmax.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredmaxu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredmaxu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredmaxu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredmaxu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredmin.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredmin.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredmin
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredmin.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredminu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredminu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredminu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredminu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredor.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredor.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredor
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredor.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredsum.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredsum.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredsum
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredsum.S
+/home/quswarabid/ara/apps/riscof/test_suite/vredxor.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vredxor.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vredxor
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vredxor.S
+/home/quswarabid/ara/apps/riscof/test_suite/vrem.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vrem.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vrem
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vrem.S
+/home/quswarabid/ara/apps/riscof/test_suite/vremu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vremu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vremu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vremu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vrsub.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vrsub.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vrsub
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vrsub.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsadd.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsadd.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsadd
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsadd.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsaddu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsaddu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsaddu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsaddu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsbc.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsbc.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsbc
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsbc.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsext.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsext.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsext
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsext.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsll.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsll.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsll
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsll.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsra.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsra.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsra
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsra.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsrl.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsrl.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsrl
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsrl.S
+/home/quswarabid/ara/apps/riscof/test_suite/vssub.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vssub.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vssub
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vssub.S
+/home/quswarabid/ara/apps/riscof/test_suite/vssubu.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vssubu.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vssubu
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vssubu.S
+/home/quswarabid/ara/apps/riscof/test_suite/vsub.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vsub.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vsub
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vsub.S
+/home/quswarabid/ara/apps/riscof/test_suite/vxor.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vxor.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vxor
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vxor.S
+/home/quswarabid/ara/apps/riscof/test_suite/vzext.S:
+  commit_id: '-'
+  work_dir: /home/quswarabid/ara/apps/riscof/riscof_work/vzext.S
+  macros:
+  - TEST_CASE_1=True
+  - XLEN=64
+  - FLEN=64
+  isa: RV64RV64IMAFDCVZicsr
+  coverage_labels:
+  - vzext
+  test_path: /home/quswarabid/ara/apps/riscof/test_suite/vzext.S
