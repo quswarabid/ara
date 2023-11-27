@@ -1,0 +1,639 @@
+# database generated on 2023-11-27 12:36 GMT
+!!omap
+- /home/quswarabid/ara/apps/riscof/test_suite/vadc.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vadc
+- /home/quswarabid/ara/apps/riscof/test_suite/vadd.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vadd
+- /home/quswarabid/ara/apps/riscof/test_suite/vand.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vand
+- /home/quswarabid/ara/apps/riscof/test_suite/vdiv.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vdiv
+- /home/quswarabid/ara/apps/riscof/test_suite/vdivu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vdivu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmacc.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmacc
+- /home/quswarabid/ara/apps/riscof/test_suite/vmadc.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmadc
+- /home/quswarabid/ara/apps/riscof/test_suite/vmadd.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmadd
+- /home/quswarabid/ara/apps/riscof/test_suite/vmax.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmax
+- /home/quswarabid/ara/apps/riscof/test_suite/vmaxu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmaxu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmin.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmin
+- /home/quswarabid/ara/apps/riscof/test_suite/vminu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vminu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsbc.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsbc
+- /home/quswarabid/ara/apps/riscof/test_suite/vmseq.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmseq
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsgt.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsgt
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsgtu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsgtu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsle.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsle
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsleu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsleu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmslt.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmslt
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsltu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsltu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmsne.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmsne
+- /home/quswarabid/ara/apps/riscof/test_suite/vmul.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmul
+- /home/quswarabid/ara/apps/riscof/test_suite/vmulh.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmulh
+- /home/quswarabid/ara/apps/riscof/test_suite/vmulhsu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmulhsu
+- /home/quswarabid/ara/apps/riscof/test_suite/vmulhu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vmulhu
+- /home/quswarabid/ara/apps/riscof/test_suite/vor.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vor
+- /home/quswarabid/ara/apps/riscof/test_suite/vredand.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredand
+- /home/quswarabid/ara/apps/riscof/test_suite/vredmax.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredmax
+- /home/quswarabid/ara/apps/riscof/test_suite/vredmaxu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredmaxu
+- /home/quswarabid/ara/apps/riscof/test_suite/vredmin.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredmin
+- /home/quswarabid/ara/apps/riscof/test_suite/vredminu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredminu
+- /home/quswarabid/ara/apps/riscof/test_suite/vredor.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredor
+- /home/quswarabid/ara/apps/riscof/test_suite/vredsum.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredsum
+- /home/quswarabid/ara/apps/riscof/test_suite/vredxor.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vredxor
+- /home/quswarabid/ara/apps/riscof/test_suite/vrem.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vrem
+- /home/quswarabid/ara/apps/riscof/test_suite/vremu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vremu
+- /home/quswarabid/ara/apps/riscof/test_suite/vrsub.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vrsub
+- /home/quswarabid/ara/apps/riscof/test_suite/vsadd.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsadd
+- /home/quswarabid/ara/apps/riscof/test_suite/vsaddu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsaddu
+- /home/quswarabid/ara/apps/riscof/test_suite/vsbc.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsbc
+- /home/quswarabid/ara/apps/riscof/test_suite/vsext.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsext
+- /home/quswarabid/ara/apps/riscof/test_suite/vsll.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsll
+- /home/quswarabid/ara/apps/riscof/test_suite/vsra.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsra
+- /home/quswarabid/ara/apps/riscof/test_suite/vsrl.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsrl
+- /home/quswarabid/ara/apps/riscof/test_suite/vssub.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vssub
+- /home/quswarabid/ara/apps/riscof/test_suite/vssubu.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vssubu
+- /home/quswarabid/ara/apps/riscof/test_suite/vsub.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vsub
+- /home/quswarabid/ara/apps/riscof/test_suite/vxor.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vxor
+- /home/quswarabid/ara/apps/riscof/test_suite/vzext.S:
+    commit_id: '-'
+    isa:
+    - RV64RV64IMAFDCVZicsr
+    parts: !!omap
+    - '0':
+        check:
+        - check ISA:=regex(.*64.*)
+        - check ISA:=regex(.*V.*)
+        define:
+        - def TEST_CASE_1=True
+        coverage_labels:
+        - vzext
