@@ -812,300 +812,57 @@ RVTEST_ISA("RV64RV64IMAFDCVZicsr")
   # VV Tests
   #-------------------------------------------------------------
   TEST_VV_OP( 1,  vadd.vv, rd_data_vv+0, rs2_data+0, rs1_data+0)
-  TEST_VV_OP( 2,  vadd.vv, rd_data_vv+64, rs2_data+64, rs1_data+64)
-  TEST_VV_OP( 3,  vadd.vv, rd_data_vv+128, rs2_data+128, rs1_data+128)
-  TEST_VV_OP( 4,  vadd.vv, rd_data_vv+192, rs2_data+192, rs1_data+192)
-  TEST_VV_OP( 5,  vadd.vv, rd_data_vv+256, rs2_data+256, rs1_data+256)
-  TEST_VV_OP( 6,  vadd.vv, rd_data_vv+320, rs2_data+320, rs1_data+320)
-  TEST_VV_OP( 7,  vadd.vv, rd_data_vv+384, rs2_data+384, rs1_data+384)
-  TEST_VV_OP( 8,  vadd.vv, rd_data_vv+448, rs2_data+448, rs1_data+448)
-  TEST_VV_OP( 9,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
-  TEST_VV_OP( 10,  vadd.vv, rd_data_vv+576, rs2_data+576, rs1_data+576)
-  TEST_VV_OP( 11,  vadd.vv, rd_data_vv+640, rs2_data+640, rs1_data+640)
-  TEST_VV_OP( 12,  vadd.vv, rd_data_vv+704, rs2_data+704, rs1_data+704)
-  TEST_VV_OP( 13,  vadd.vv, rd_data_vv+768, rs2_data+768, rs1_data+768)
-  TEST_VV_OP( 14,  vadd.vv, rd_data_vv+832, rs2_data+832, rs1_data+832)
-  TEST_VV_OP( 15,  vadd.vv, rd_data_vv+896, rs2_data+896, rs1_data+896)
-  TEST_VV_OP( 16,  vadd.vv, rd_data_vv+960, rs2_data+960, rs1_data+960)
-  TEST_VV_OP( 17,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
-  TEST_VV_OP( 18,  vadd.vv, rd_data_vv+1088, rs2_data+1088, rs1_data+1088)
-  TEST_VV_OP( 19,  vadd.vv, rd_data_vv+1152, rs2_data+1152, rs1_data+1152)
-  TEST_VV_OP( 20,  vadd.vv, rd_data_vv+1216, rs2_data+1216, rs1_data+1216)
-  TEST_VV_OP( 21,  vadd.vv, rd_data_vv+1280, rs2_data+1280, rs1_data+1280)
-  TEST_VV_OP( 22,  vadd.vv, rd_data_vv+1344, rs2_data+1344, rs1_data+1344)
-  TEST_VV_OP( 23,  vadd.vv, rd_data_vv+1408, rs2_data+1408, rs1_data+1408)
-  TEST_VV_OP( 24,  vadd.vv, rd_data_vv+1472, rs2_data+1472, rs1_data+1472)
-  TEST_VV_OP( 25,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
-  TEST_VV_OP( 26,  vadd.vv, rd_data_vv+1600, rs2_data+1600, rs1_data+1600)
-  TEST_VV_OP( 27,  vadd.vv, rd_data_vv+1664, rs2_data+1664, rs1_data+1664)
-  TEST_VV_OP( 28,  vadd.vv, rd_data_vv+1728, rs2_data+1728, rs1_data+1728)
-  TEST_VV_OP( 29,  vadd.vv, rd_data_vv+1792, rs2_data+1792, rs1_data+1792)
-  TEST_VV_OP( 30,  vadd.vv, rd_data_vv+1856, rs2_data+1856, rs1_data+1856)
-  TEST_VV_OP( 31,  vadd.vv, rd_data_vv+1920, rs2_data+1920, rs1_data+1920)
-  TEST_VV_OP( 32,  vadd.vv, rd_data_vv+1984, rs2_data+1984, rs1_data+1984)
-  TEST_VV_OP( 33,  vadd.vv, rd_data_vv+2048, rs2_data+2048, rs1_data+2048)
-  TEST_VV_OP( 34,  vadd.vv, rd_data_vv+2112, rs2_data+2112, rs1_data+2112)
-  TEST_VV_OP( 35,  vadd.vv, rd_data_vv+2176, rs2_data+2176, rs1_data+2176)
-  TEST_VV_OP( 36,  vadd.vv, rd_data_vv+2240, rs2_data+2240, rs1_data+2240)
-  TEST_VV_OP( 37,  vadd.vv, rd_data_vv+2304, rs2_data+2304, rs1_data+2304)
-  TEST_VV_OP( 38,  vadd.vv, rd_data_vv+2368, rs2_data+2368, rs1_data+2368)
-  TEST_VV_OP( 39,  vadd.vv, rd_data_vv+2432, rs2_data+2432, rs1_data+2432)
-  TEST_VV_OP( 40,  vadd.vv, rd_data_vv+2496, rs2_data+2496, rs1_data+2496)
-  TEST_VV_OP( 41,  vadd.vv, rd_data_vv+2560, rs2_data+2560, rs1_data+2560)
-  TEST_VV_OP( 42,  vadd.vv, rd_data_vv+2624, rs2_data+2624, rs1_data+2624)
-  TEST_VV_OP( 43,  vadd.vv, rd_data_vv+2688, rs2_data+2688, rs1_data+2688)
-  TEST_VV_OP( 44,  vadd.vv, rd_data_vv+2752, rs2_data+2752, rs1_data+2752)
-  TEST_VV_OP( 45,  vadd.vv, rd_data_vv+2816, rs2_data+2816, rs1_data+2816)
-  TEST_VV_OP( 46,  vadd.vv, rd_data_vv+2880, rs2_data+2880, rs1_data+2880)
-  TEST_VV_OP( 47,  vadd.vv, rd_data_vv+2944, rs2_data+2944, rs1_data+2944)
-  TEST_VV_OP( 48,  vadd.vv, rd_data_vv+3008, rs2_data+3008, rs1_data+3008)
-  TEST_VV_OP( 49,  vadd.vv, rd_data_vv+3072, rs2_data+3072, rs1_data+3072)
-  TEST_VV_OP( 50,  vadd.vv, rd_data_vv+3136, rs2_data+3136, rs1_data+3136)
-  TEST_VV_OP( 51,  vadd.vv, rd_data_vv+3200, rs2_data+3200, rs1_data+3200)
-  TEST_VV_OP( 52,  vadd.vv, rd_data_vv+3264, rs2_data+3264, rs1_data+3264)
-  TEST_VV_OP( 53,  vadd.vv, rd_data_vv+3328, rs2_data+3328, rs1_data+3328)
-  TEST_VV_OP( 54,  vadd.vv, rd_data_vv+3392, rs2_data+3392, rs1_data+3392)
-  TEST_VV_OP( 55,  vadd.vv, rd_data_vv+3456, rs2_data+3456, rs1_data+3456)
-  TEST_VV_OP( 56,  vadd.vv, rd_data_vv+3520, rs2_data+3520, rs1_data+3520)
-  TEST_VV_OP( 57,  vadd.vv, rd_data_vv+3584, rs2_data+3584, rs1_data+3584)
-  TEST_VV_OP( 58,  vadd.vv, rd_data_vv+3648, rs2_data+3648, rs1_data+3648)
-  TEST_VV_OP( 59,  vadd.vv, rd_data_vv+3712, rs2_data+3712, rs1_data+3712)
-  TEST_VV_OP( 60,  vadd.vv, rd_data_vv+3776, rs2_data+3776, rs1_data+3776)
-  TEST_VV_OP( 61,  vadd.vv, rd_data_vv+3840, rs2_data+3840, rs1_data+3840)
-  TEST_VV_OP( 62,  vadd.vv, rd_data_vv+3904, rs2_data+3904, rs1_data+3904)
-  TEST_VV_OP( 63,  vadd.vv, rd_data_vv+3968, rs2_data+3968, rs1_data+3968)
-  TEST_VV_OP( 64,  vadd.vv, rd_data_vv+4032, rs2_data+4032, rs1_data+4032)
-  TEST_VV_OP( 65,  vadd.vv, rd_data_vv+4096, rs2_data+4096, rs1_data+4096)
-  TEST_VV_OP( 66,  vadd.vv, rd_data_vv+4160, rs2_data+4160, rs1_data+4160)
-  TEST_VV_OP( 67,  vadd.vv, rd_data_vv+4224, rs2_data+4224, rs1_data+4224)
-  TEST_VV_OP( 68,  vadd.vv, rd_data_vv+4288, rs2_data+4288, rs1_data+4288)
-  TEST_VV_OP( 69,  vadd.vv, rd_data_vv+4352, rs2_data+4352, rs1_data+4352)
-  TEST_VV_OP( 70,  vadd.vv, rd_data_vv+4416, rs2_data+4416, rs1_data+4416)
-  TEST_VV_OP( 71,  vadd.vv, rd_data_vv+4480, rs2_data+4480, rs1_data+4480)
-  TEST_VV_OP( 72,  vadd.vv, rd_data_vv+4544, rs2_data+4544, rs1_data+4544)
-  TEST_VV_OP( 73,  vadd.vv, rd_data_vv+4608, rs2_data+4608, rs1_data+4608)
-  TEST_VV_OP( 74,  vadd.vv, rd_data_vv+4672, rs2_data+4672, rs1_data+4672)
-  TEST_VV_OP( 75,  vadd.vv, rd_data_vv+4736, rs2_data+4736, rs1_data+4736)
-  TEST_VV_OP( 76,  vadd.vv, rd_data_vv+4800, rs2_data+4800, rs1_data+4800)
-  TEST_VV_OP_rd1( 77,  vadd.vv, rd_data_vv+0, rs2_data+0, rs1_data+0)
-  TEST_VV_OP_12( 78,  vadd.vv, rd_data_vv+0, rs2_data+0, rs1_data+0)
-  TEST_VV_OP_rd2( 79,  vadd.vv, rd_data_vv+64, rs2_data+64, rs1_data+64)
-  TEST_VV_OP_13( 80,  vadd.vv, rd_data_vv+64, rs2_data+64, rs1_data+64)
-  TEST_VV_OP_rd3( 81,  vadd.vv, rd_data_vv+128, rs2_data+128, rs1_data+128)
-  TEST_VV_OP_14( 82,  vadd.vv, rd_data_vv+128, rs2_data+128, rs1_data+128)
-  TEST_VV_OP_rd4( 83,  vadd.vv, rd_data_vv+192, rs2_data+192, rs1_data+192)
-  TEST_VV_OP_15( 84,  vadd.vv, rd_data_vv+192, rs2_data+192, rs1_data+192)
-  TEST_VV_OP_rd5( 85,  vadd.vv, rd_data_vv+256, rs2_data+256, rs1_data+256)
-  TEST_VV_OP_16( 86,  vadd.vv, rd_data_vv+256, rs2_data+256, rs1_data+256)
-  TEST_VV_OP_rd6( 87,  vadd.vv, rd_data_vv+320, rs2_data+320, rs1_data+320)
-  TEST_VV_OP_17( 88,  vadd.vv, rd_data_vv+320, rs2_data+320, rs1_data+320)
-  TEST_VV_OP_rd7( 89,  vadd.vv, rd_data_vv+384, rs2_data+384, rs1_data+384)
-  TEST_VV_OP_rd8( 90,  vadd.vv, rd_data_vv+448, rs2_data+448, rs1_data+448)
-  TEST_VV_OP_19( 91,  vadd.vv, rd_data_vv+448, rs2_data+448, rs1_data+448)
-  TEST_VV_OP_rd9( 92,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
-  TEST_VV_OP_110( 93,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
-  TEST_VV_OP_rd10( 94,  vadd.vv, rd_data_vv+576, rs2_data+576, rs1_data+576)
-  TEST_VV_OP_111( 95,  vadd.vv, rd_data_vv+576, rs2_data+576, rs1_data+576)
-  TEST_VV_OP_rd11( 96,  vadd.vv, rd_data_vv+640, rs2_data+640, rs1_data+640)
-  TEST_VV_OP_112( 97,  vadd.vv, rd_data_vv+640, rs2_data+640, rs1_data+640)
-  TEST_VV_OP_rd12( 98,  vadd.vv, rd_data_vv+704, rs2_data+704, rs1_data+704)
-  TEST_VV_OP_113( 99,  vadd.vv, rd_data_vv+704, rs2_data+704, rs1_data+704)
-  TEST_VV_OP_rd13( 100,  vadd.vv, rd_data_vv+768, rs2_data+768, rs1_data+768)
-  TEST_VV_OP_114( 101,  vadd.vv, rd_data_vv+768, rs2_data+768, rs1_data+768)
-  TEST_VV_OP_rd14( 102,  vadd.vv, rd_data_vv+832, rs2_data+832, rs1_data+832)
-  TEST_VV_OP_115( 103,  vadd.vv, rd_data_vv+832, rs2_data+832, rs1_data+832)
-  TEST_VV_OP_rd15( 104,  vadd.vv, rd_data_vv+896, rs2_data+896, rs1_data+896)
-  TEST_VV_OP_rd16( 105,  vadd.vv, rd_data_vv+960, rs2_data+960, rs1_data+960)
-  TEST_VV_OP_117( 106,  vadd.vv, rd_data_vv+960, rs2_data+960, rs1_data+960)
-  TEST_VV_OP_rd17( 107,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
-  TEST_VV_OP_118( 108,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
-  TEST_VV_OP_rd18( 109,  vadd.vv, rd_data_vv+1088, rs2_data+1088, rs1_data+1088)
-  TEST_VV_OP_119( 110,  vadd.vv, rd_data_vv+1088, rs2_data+1088, rs1_data+1088)
-  TEST_VV_OP_rd19( 111,  vadd.vv, rd_data_vv+1152, rs2_data+1152, rs1_data+1152)
-  TEST_VV_OP_120( 112,  vadd.vv, rd_data_vv+1152, rs2_data+1152, rs1_data+1152)
-  TEST_VV_OP_rd20( 113,  vadd.vv, rd_data_vv+1216, rs2_data+1216, rs1_data+1216)
-  TEST_VV_OP_121( 114,  vadd.vv, rd_data_vv+1216, rs2_data+1216, rs1_data+1216)
-  TEST_VV_OP_rd21( 115,  vadd.vv, rd_data_vv+1280, rs2_data+1280, rs1_data+1280)
-  TEST_VV_OP_122( 116,  vadd.vv, rd_data_vv+1280, rs2_data+1280, rs1_data+1280)
-  TEST_VV_OP_rd22( 117,  vadd.vv, rd_data_vv+1344, rs2_data+1344, rs1_data+1344)
-  TEST_VV_OP_123( 118,  vadd.vv, rd_data_vv+1344, rs2_data+1344, rs1_data+1344)
-  TEST_VV_OP_rd23( 119,  vadd.vv, rd_data_vv+1408, rs2_data+1408, rs1_data+1408)
-  TEST_VV_OP_rd25( 120,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
-  TEST_VV_OP_126( 121,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
-  TEST_VV_OP_rd26( 122,  vadd.vv, rd_data_vv+1600, rs2_data+1600, rs1_data+1600)
-  TEST_VV_OP_127( 123,  vadd.vv, rd_data_vv+1600, rs2_data+1600, rs1_data+1600)
-  TEST_VV_OP_rd27( 124,  vadd.vv, rd_data_vv+1664, rs2_data+1664, rs1_data+1664)
-  TEST_VV_OP_128( 125,  vadd.vv, rd_data_vv+1664, rs2_data+1664, rs1_data+1664)
-  TEST_VV_OP_rd28( 126,  vadd.vv, rd_data_vv+1728, rs2_data+1728, rs1_data+1728)
-  TEST_VV_OP_129( 127,  vadd.vv, rd_data_vv+1728, rs2_data+1728, rs1_data+1728)
-  TEST_VV_OP_rd29( 128,  vadd.vv, rd_data_vv+1792, rs2_data+1792, rs1_data+1792)
-  TEST_VV_OP_130( 129,  vadd.vv, rd_data_vv+1792, rs2_data+1792, rs1_data+1792)
-  TEST_VV_OP_rd30( 130,  vadd.vv, rd_data_vv+1856, rs2_data+1856, rs1_data+1856)
-  TEST_VV_OP_131( 131,  vadd.vv, rd_data_vv+1856, rs2_data+1856, rs1_data+1856)
-  TEST_VV_OP_rd31( 132,  vadd.vv, rd_data_vv+1920, rs2_data+1920, rs1_data+1920)
-  TEST_VV_OP_12( 133,  vadd.vv, rd_data_vv+1920, rs2_data+1920, rs1_data+1920)
-  TEST_VV_OP_rd1( 134,  vadd.vv, rd_data_vv+1984, rs2_data+1984, rs1_data+1984)
-  TEST_VV_OP_13( 135,  vadd.vv, rd_data_vv+1984, rs2_data+1984, rs1_data+1984)
+  TEST_VV_OP( 2,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
+  TEST_VV_OP( 3,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
+  TEST_VV_OP( 4,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
+  TEST_VV_OP( 5,  vadd.vv, rd_data_vv+2048, rs2_data+2048, rs1_data+2048)
+  TEST_VV_OP( 6,  vadd.vv, rd_data_vv+2560, rs2_data+2560, rs1_data+2560)
+  TEST_VV_OP( 7,  vadd.vv, rd_data_vv+3072, rs2_data+3072, rs1_data+3072)
+  TEST_VV_OP( 8,  vadd.vv, rd_data_vv+3584, rs2_data+3584, rs1_data+3584)
+  TEST_VV_OP( 9,  vadd.vv, rd_data_vv+4096, rs2_data+4096, rs1_data+4096)
+  TEST_VV_OP_rd1( 10,  vadd.vv, rd_data_vv+0, rs2_data+0, rs1_data+0)
+  TEST_VV_OP_12( 11,  vadd.vv, rd_data_vv+0, rs2_data+0, rs1_data+0)
+  TEST_VV_OP_rd2( 12,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
+  TEST_VV_OP_13( 13,  vadd.vv, rd_data_vv+512, rs2_data+512, rs1_data+512)
+  TEST_VV_OP_rd3( 14,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
+  TEST_VV_OP_14( 15,  vadd.vv, rd_data_vv+1024, rs2_data+1024, rs1_data+1024)
+  TEST_VV_OP_rd4( 16,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
+  TEST_VV_OP_15( 17,  vadd.vv, rd_data_vv+1536, rs2_data+1536, rs1_data+1536)
+  TEST_VV_OP_rd5( 18,  vadd.vv, rd_data_vv+2048, rs2_data+2048, rs1_data+2048)
+  TEST_VV_OP_16( 19,  vadd.vv, rd_data_vv+2048, rs2_data+2048, rs1_data+2048)
+  TEST_VV_OP_rd6( 20,  vadd.vv, rd_data_vv+2560, rs2_data+2560, rs1_data+2560)
+  TEST_VV_OP_17( 21,  vadd.vv, rd_data_vv+2560, rs2_data+2560, rs1_data+2560)
+  TEST_VV_OP_rd7( 22,  vadd.vv, rd_data_vv+3072, rs2_data+3072, rs1_data+3072)
+  TEST_VV_OP_rd8( 23,  vadd.vv, rd_data_vv+3584, rs2_data+3584, rs1_data+3584)
+  TEST_VV_OP_19( 24,  vadd.vv, rd_data_vv+3584, rs2_data+3584, rs1_data+3584)
+  TEST_VV_OP_rd9( 25,  vadd.vv, rd_data_vv+4096, rs2_data+4096, rs1_data+4096)
+  TEST_VV_OP_110( 26,  vadd.vv, rd_data_vv+4096, rs2_data+4096, rs1_data+4096)
   #-------------------------------------------------------------
   # VX Tests
   #-------------------------------------------------------------
   RVTEST_SIGBASE( x20,signature_x20_1)
-  TEST_VX_OP( 136,  vadd.vx, rd_data_vx+0, rs2_data+0, 0xfffffffffffffffe)
-  TEST_VX_OP( 137,  vadd.vx, rd_data_vx+64, rs2_data+64, 0xfffffffffffffffe)
-  TEST_VX_OP( 138,  vadd.vx, rd_data_vx+128, rs2_data+128, 0xfffffffffffffffe)
-  TEST_VX_OP( 139,  vadd.vx, rd_data_vx+192, rs2_data+192, 0xfffffffffffffffe)
-  TEST_VX_OP( 140,  vadd.vx, rd_data_vx+256, rs2_data+256, 0xfffffffffffffffe)
-  TEST_VX_OP( 141,  vadd.vx, rd_data_vx+320, rs2_data+320, 0xfffffffffffffffe)
-  TEST_VX_OP( 142,  vadd.vx, rd_data_vx+384, rs2_data+384, 0xfffffffffffffffe)
-  TEST_VX_OP( 143,  vadd.vx, rd_data_vx+448, rs2_data+448, 0xfffffffffffffffe)
-  TEST_VX_OP( 144,  vadd.vx, rd_data_vx+512, rs2_data+512, 0xfffffffffffffffe)
-  TEST_VX_OP( 145,  vadd.vx, rd_data_vx+576, rs2_data+576, 0xfffffffffffffffe)
-  TEST_VX_OP( 146,  vadd.vx, rd_data_vx+640, rs2_data+640, 0xfffffffffffffffe)
-  TEST_VX_OP( 147,  vadd.vx, rd_data_vx+704, rs2_data+704, 0xfffffffffffffffe)
-  TEST_VX_OP( 148,  vadd.vx, rd_data_vx+768, rs2_data+768, 0xfffffffffffffffe)
-  TEST_VX_OP( 149,  vadd.vx, rd_data_vx+832, rs2_data+832, 0xfffffffffffffffe)
-  TEST_VX_OP( 150,  vadd.vx, rd_data_vx+896, rs2_data+896, 0xfffffffffffffffe)
-  TEST_VX_OP( 151,  vadd.vx, rd_data_vx+960, rs2_data+960, 0xfffffffffffffffe)
-  TEST_VX_OP( 152,  vadd.vx, rd_data_vx+1024, rs2_data+1024, 0xfffffffffffffffe)
-  TEST_VX_OP( 153,  vadd.vx, rd_data_vx+1088, rs2_data+1088, 0xfffffffffffffffe)
-  TEST_VX_OP( 154,  vadd.vx, rd_data_vx+1152, rs2_data+1152, 0xfffffffffffffffe)
-  TEST_VX_OP( 155,  vadd.vx, rd_data_vx+1216, rs2_data+1216, 0xfffffffffffffffe)
-  TEST_VX_OP( 156,  vadd.vx, rd_data_vx+1280, rs2_data+1280, 0xfffffffffffffffe)
-  TEST_VX_OP( 157,  vadd.vx, rd_data_vx+1344, rs2_data+1344, 0xfffffffffffffffe)
-  TEST_VX_OP( 158,  vadd.vx, rd_data_vx+1408, rs2_data+1408, 0xfffffffffffffffe)
-  TEST_VX_OP( 159,  vadd.vx, rd_data_vx+1472, rs2_data+1472, 0xfffffffffffffffe)
-  TEST_VX_OP( 160,  vadd.vx, rd_data_vx+1536, rs2_data+1536, 0xfffffffffffffffe)
-  TEST_VX_OP( 161,  vadd.vx, rd_data_vx+1600, rs2_data+1600, 0xfffffffffffffffe)
-  TEST_VX_OP( 162,  vadd.vx, rd_data_vx+1664, rs2_data+1664, 0xfffffffffffffffe)
-  TEST_VX_OP( 163,  vadd.vx, rd_data_vx+1728, rs2_data+1728, 0xfffffffffffffffe)
-  TEST_VX_OP( 164,  vadd.vx, rd_data_vx+1792, rs2_data+1792, 0xfffffffffffffffe)
-  TEST_VX_OP( 165,  vadd.vx, rd_data_vx+1856, rs2_data+1856, 0xfffffffffffffffe)
-  TEST_VX_OP( 166,  vadd.vx, rd_data_vx+1920, rs2_data+1920, 0xfffffffffffffffe)
-  TEST_VX_OP( 167,  vadd.vx, rd_data_vx+1984, rs2_data+1984, 0xfffffffffffffffe)
-  TEST_VX_OP( 168,  vadd.vx, rd_data_vx+2048, rs2_data+2048, 0xfffffffffffffffe)
-  TEST_VX_OP( 169,  vadd.vx, rd_data_vx+2112, rs2_data+2112, 0xfffffffffffffffe)
-  TEST_VX_OP( 170,  vadd.vx, rd_data_vx+2176, rs2_data+2176, 0xfffffffffffffffe)
-  TEST_VX_OP( 171,  vadd.vx, rd_data_vx+2240, rs2_data+2240, 0xfffffffffffffffe)
-  TEST_VX_OP( 172,  vadd.vx, rd_data_vx+2304, rs2_data+2304, 0xfffffffffffffffe)
-  TEST_VX_OP( 173,  vadd.vx, rd_data_vx+2368, rs2_data+2368, 0xfffffffffffffffe)
-  TEST_VX_OP( 174,  vadd.vx, rd_data_vx+2432, rs2_data+2432, 0xfffffffffffffffe)
-  TEST_VX_OP( 175,  vadd.vx, rd_data_vx+2496, rs2_data+2496, 0xfffffffffffffffe)
-  TEST_VX_OP( 176,  vadd.vx, rd_data_vx+2560, rs2_data+2560, 0xfffffffffffffffe)
-  TEST_VX_OP( 177,  vadd.vx, rd_data_vx+2624, rs2_data+2624, 0xfffffffffffffffe)
-  TEST_VX_OP( 178,  vadd.vx, rd_data_vx+2688, rs2_data+2688, 0xfffffffffffffffe)
-  TEST_VX_OP( 179,  vadd.vx, rd_data_vx+2752, rs2_data+2752, 0xfffffffffffffffe)
-  TEST_VX_OP( 180,  vadd.vx, rd_data_vx+2816, rs2_data+2816, 0xfffffffffffffffe)
-  TEST_VX_OP( 181,  vadd.vx, rd_data_vx+2880, rs2_data+2880, 0xfffffffffffffffe)
-  TEST_VX_OP( 182,  vadd.vx, rd_data_vx+2944, rs2_data+2944, 0xfffffffffffffffe)
-  TEST_VX_OP( 183,  vadd.vx, rd_data_vx+3008, rs2_data+3008, 0xfffffffffffffffe)
-  TEST_VX_OP( 184,  vadd.vx, rd_data_vx+3072, rs2_data+3072, 0xfffffffffffffffe)
-  TEST_VX_OP( 185,  vadd.vx, rd_data_vx+3136, rs2_data+3136, 0xfffffffffffffffe)
-  TEST_VX_OP( 186,  vadd.vx, rd_data_vx+3200, rs2_data+3200, 0xfffffffffffffffe)
-  TEST_VX_OP( 187,  vadd.vx, rd_data_vx+3264, rs2_data+3264, 0xfffffffffffffffe)
-  TEST_VX_OP( 188,  vadd.vx, rd_data_vx+3328, rs2_data+3328, 0xfffffffffffffffe)
-  TEST_VX_OP( 189,  vadd.vx, rd_data_vx+3392, rs2_data+3392, 0xfffffffffffffffe)
-  TEST_VX_OP( 190,  vadd.vx, rd_data_vx+3456, rs2_data+3456, 0xfffffffffffffffe)
-  TEST_VX_OP( 191,  vadd.vx, rd_data_vx+3520, rs2_data+3520, 0xfffffffffffffffe)
-  TEST_VX_OP( 192,  vadd.vx, rd_data_vx+3584, rs2_data+3584, 0xfffffffffffffffe)
-  TEST_VX_OP( 193,  vadd.vx, rd_data_vx+3648, rs2_data+3648, 0xfffffffffffffffe)
-  TEST_VX_OP( 194,  vadd.vx, rd_data_vx+3712, rs2_data+3712, 0xfffffffffffffffe)
-  TEST_VX_OP( 195,  vadd.vx, rd_data_vx+3776, rs2_data+3776, 0xfffffffffffffffe)
-  TEST_VX_OP( 196,  vadd.vx, rd_data_vx+3840, rs2_data+3840, 0xfffffffffffffffe)
-  TEST_VX_OP( 197,  vadd.vx, rd_data_vx+3904, rs2_data+3904, 0xfffffffffffffffe)
-  TEST_VX_OP( 198,  vadd.vx, rd_data_vx+3968, rs2_data+3968, 0xfffffffffffffffe)
-  TEST_VX_OP( 199,  vadd.vx, rd_data_vx+4032, rs2_data+4032, 0xfffffffffffffffe)
-  TEST_VX_OP( 200,  vadd.vx, rd_data_vx+4096, rs2_data+4096, 0xfffffffffffffffe)
-  TEST_VX_OP( 201,  vadd.vx, rd_data_vx+4160, rs2_data+4160, 0xfffffffffffffffe)
-  TEST_VX_OP( 202,  vadd.vx, rd_data_vx+4224, rs2_data+4224, 0xfffffffffffffffe)
-  TEST_VX_OP( 203,  vadd.vx, rd_data_vx+4288, rs2_data+4288, 0xfffffffffffffffe)
-  TEST_VX_OP( 204,  vadd.vx, rd_data_vx+4352, rs2_data+4352, 0xfffffffffffffffe)
-  TEST_VX_OP( 205,  vadd.vx, rd_data_vx+4416, rs2_data+4416, 0xfffffffffffffffe)
-  TEST_VX_OP( 206,  vadd.vx, rd_data_vx+4480, rs2_data+4480, 0xfffffffffffffffe)
-  TEST_VX_OP( 207,  vadd.vx, rd_data_vx+4544, rs2_data+4544, 0xfffffffffffffffe)
-  TEST_VX_OP( 208,  vadd.vx, rd_data_vx+4608, rs2_data+4608, 0xfffffffffffffffe)
-  TEST_VX_OP( 209,  vadd.vx, rd_data_vx+4672, rs2_data+4672, 0xfffffffffffffffe)
-  TEST_VX_OP( 210,  vadd.vx, rd_data_vx+4736, rs2_data+4736, 0xfffffffffffffffe)
-  TEST_VX_OP( 211,  vadd.vx, rd_data_vx+4800, rs2_data+4800, 0xfffffffffffffffe)
+  TEST_VX_OP( 27,  vadd.vx, rd_data_vx+0, rs2_data+0, 0xfffffffffffffffe)
+  TEST_VX_OP( 28,  vadd.vx, rd_data_vx+512, rs2_data+512, 0xfffffffffffffffe)
+  TEST_VX_OP( 29,  vadd.vx, rd_data_vx+1024, rs2_data+1024, 0xfffffffffffffffe)
+  TEST_VX_OP( 30,  vadd.vx, rd_data_vx+1536, rs2_data+1536, 0xfffffffffffffffe)
+  TEST_VX_OP( 31,  vadd.vx, rd_data_vx+2048, rs2_data+2048, 0xfffffffffffffffe)
+  TEST_VX_OP( 32,  vadd.vx, rd_data_vx+2560, rs2_data+2560, 0xfffffffffffffffe)
+  TEST_VX_OP( 33,  vadd.vx, rd_data_vx+3072, rs2_data+3072, 0xfffffffffffffffe)
+  TEST_VX_OP( 34,  vadd.vx, rd_data_vx+3584, rs2_data+3584, 0xfffffffffffffffe)
+  TEST_VX_OP( 35,  vadd.vx, rd_data_vx+4096, rs2_data+4096, 0xfffffffffffffffe)
   #-------------------------------------------------------------
   # VI Tests
   #-------------------------------------------------------------
   RVTEST_SIGBASE( x12,signature_x12_1)
-  TEST_VI_OP( 212,  vadd.vi, rd_data_vi+0, rs2_data+0, 15)
-  TEST_VI_OP( 213,  vadd.vi, rd_data_vi+64, rs2_data+64, 15)
-  TEST_VI_OP( 214,  vadd.vi, rd_data_vi+128, rs2_data+128, 15)
-  TEST_VI_OP( 215,  vadd.vi, rd_data_vi+192, rs2_data+192, 15)
-  TEST_VI_OP( 216,  vadd.vi, rd_data_vi+256, rs2_data+256, 15)
-  TEST_VI_OP( 217,  vadd.vi, rd_data_vi+320, rs2_data+320, 15)
-  TEST_VI_OP( 218,  vadd.vi, rd_data_vi+384, rs2_data+384, 15)
-  TEST_VI_OP( 219,  vadd.vi, rd_data_vi+448, rs2_data+448, 15)
-  TEST_VI_OP( 220,  vadd.vi, rd_data_vi+512, rs2_data+512, 15)
-  TEST_VI_OP( 221,  vadd.vi, rd_data_vi+576, rs2_data+576, 15)
-  TEST_VI_OP( 222,  vadd.vi, rd_data_vi+640, rs2_data+640, 15)
-  TEST_VI_OP( 223,  vadd.vi, rd_data_vi+704, rs2_data+704, 15)
-  TEST_VI_OP( 224,  vadd.vi, rd_data_vi+768, rs2_data+768, 15)
-  TEST_VI_OP( 225,  vadd.vi, rd_data_vi+832, rs2_data+832, 15)
-  TEST_VI_OP( 226,  vadd.vi, rd_data_vi+896, rs2_data+896, 15)
-  TEST_VI_OP( 227,  vadd.vi, rd_data_vi+960, rs2_data+960, 15)
-  TEST_VI_OP( 228,  vadd.vi, rd_data_vi+1024, rs2_data+1024, 15)
-  TEST_VI_OP( 229,  vadd.vi, rd_data_vi+1088, rs2_data+1088, 15)
-  TEST_VI_OP( 230,  vadd.vi, rd_data_vi+1152, rs2_data+1152, 15)
-  TEST_VI_OP( 231,  vadd.vi, rd_data_vi+1216, rs2_data+1216, 15)
-  TEST_VI_OP( 232,  vadd.vi, rd_data_vi+1280, rs2_data+1280, 15)
-  TEST_VI_OP( 233,  vadd.vi, rd_data_vi+1344, rs2_data+1344, 15)
-  TEST_VI_OP( 234,  vadd.vi, rd_data_vi+1408, rs2_data+1408, 15)
-  TEST_VI_OP( 235,  vadd.vi, rd_data_vi+1472, rs2_data+1472, 15)
-  TEST_VI_OP( 236,  vadd.vi, rd_data_vi+1536, rs2_data+1536, 15)
-  TEST_VI_OP( 237,  vadd.vi, rd_data_vi+1600, rs2_data+1600, 15)
-  TEST_VI_OP( 238,  vadd.vi, rd_data_vi+1664, rs2_data+1664, 15)
-  TEST_VI_OP( 239,  vadd.vi, rd_data_vi+1728, rs2_data+1728, 15)
-  TEST_VI_OP( 240,  vadd.vi, rd_data_vi+1792, rs2_data+1792, 15)
-  TEST_VI_OP( 241,  vadd.vi, rd_data_vi+1856, rs2_data+1856, 15)
-  TEST_VI_OP( 242,  vadd.vi, rd_data_vi+1920, rs2_data+1920, 15)
-  TEST_VI_OP( 243,  vadd.vi, rd_data_vi+1984, rs2_data+1984, 15)
-  TEST_VI_OP( 244,  vadd.vi, rd_data_vi+2048, rs2_data+2048, 15)
-  TEST_VI_OP( 245,  vadd.vi, rd_data_vi+2112, rs2_data+2112, 15)
-  TEST_VI_OP( 246,  vadd.vi, rd_data_vi+2176, rs2_data+2176, 15)
-  TEST_VI_OP( 247,  vadd.vi, rd_data_vi+2240, rs2_data+2240, 15)
-  TEST_VI_OP( 248,  vadd.vi, rd_data_vi+2304, rs2_data+2304, 15)
-  TEST_VI_OP( 249,  vadd.vi, rd_data_vi+2368, rs2_data+2368, 15)
-  TEST_VI_OP( 250,  vadd.vi, rd_data_vi+2432, rs2_data+2432, 15)
-  TEST_VI_OP( 251,  vadd.vi, rd_data_vi+2496, rs2_data+2496, 15)
-  TEST_VI_OP( 252,  vadd.vi, rd_data_vi+2560, rs2_data+2560, 15)
-  TEST_VI_OP( 253,  vadd.vi, rd_data_vi+2624, rs2_data+2624, 15)
-  TEST_VI_OP( 254,  vadd.vi, rd_data_vi+2688, rs2_data+2688, 15)
-  TEST_VI_OP( 255,  vadd.vi, rd_data_vi+2752, rs2_data+2752, 15)
-  TEST_VI_OP( 256,  vadd.vi, rd_data_vi+2816, rs2_data+2816, 15)
-  TEST_VI_OP( 257,  vadd.vi, rd_data_vi+2880, rs2_data+2880, 15)
-  TEST_VI_OP( 258,  vadd.vi, rd_data_vi+2944, rs2_data+2944, 15)
-  TEST_VI_OP( 259,  vadd.vi, rd_data_vi+3008, rs2_data+3008, 15)
-  TEST_VI_OP( 260,  vadd.vi, rd_data_vi+3072, rs2_data+3072, 15)
-  TEST_VI_OP( 261,  vadd.vi, rd_data_vi+3136, rs2_data+3136, 15)
-  TEST_VI_OP( 262,  vadd.vi, rd_data_vi+3200, rs2_data+3200, 15)
-  TEST_VI_OP( 263,  vadd.vi, rd_data_vi+3264, rs2_data+3264, 15)
-  TEST_VI_OP( 264,  vadd.vi, rd_data_vi+3328, rs2_data+3328, 15)
-  TEST_VI_OP( 265,  vadd.vi, rd_data_vi+3392, rs2_data+3392, 15)
-  TEST_VI_OP( 266,  vadd.vi, rd_data_vi+3456, rs2_data+3456, 15)
-  TEST_VI_OP( 267,  vadd.vi, rd_data_vi+3520, rs2_data+3520, 15)
-  TEST_VI_OP( 268,  vadd.vi, rd_data_vi+3584, rs2_data+3584, 15)
-  TEST_VI_OP( 269,  vadd.vi, rd_data_vi+3648, rs2_data+3648, 15)
-  TEST_VI_OP( 270,  vadd.vi, rd_data_vi+3712, rs2_data+3712, 15)
-  TEST_VI_OP( 271,  vadd.vi, rd_data_vi+3776, rs2_data+3776, 15)
-  TEST_VI_OP( 272,  vadd.vi, rd_data_vi+3840, rs2_data+3840, 15)
-  TEST_VI_OP( 273,  vadd.vi, rd_data_vi+3904, rs2_data+3904, 15)
-  TEST_VI_OP( 274,  vadd.vi, rd_data_vi+3968, rs2_data+3968, 15)
-  TEST_VI_OP( 275,  vadd.vi, rd_data_vi+4032, rs2_data+4032, 15)
-  TEST_VI_OP( 276,  vadd.vi, rd_data_vi+4096, rs2_data+4096, 15)
-  TEST_VI_OP( 277,  vadd.vi, rd_data_vi+4160, rs2_data+4160, 15)
-  TEST_VI_OP( 278,  vadd.vi, rd_data_vi+4224, rs2_data+4224, 15)
-  TEST_VI_OP( 279,  vadd.vi, rd_data_vi+4288, rs2_data+4288, 15)
-  TEST_VI_OP( 280,  vadd.vi, rd_data_vi+4352, rs2_data+4352, 15)
-  TEST_VI_OP( 281,  vadd.vi, rd_data_vi+4416, rs2_data+4416, 15)
-  TEST_VI_OP( 282,  vadd.vi, rd_data_vi+4480, rs2_data+4480, 15)
-  TEST_VI_OP( 283,  vadd.vi, rd_data_vi+4544, rs2_data+4544, 15)
-  TEST_VI_OP( 284,  vadd.vi, rd_data_vi+4608, rs2_data+4608, 15)
-  TEST_VI_OP( 285,  vadd.vi, rd_data_vi+4672, rs2_data+4672, 15)
-  TEST_VI_OP( 286,  vadd.vi, rd_data_vi+4736, rs2_data+4736, 15)
-  TEST_VI_OP( 287,  vadd.vi, rd_data_vi+4800, rs2_data+4800, 15)
+  TEST_VI_OP( 36,  vadd.vi, rd_data_vi+0, rs2_data+0, 15)
+  TEST_VI_OP( 37,  vadd.vi, rd_data_vi+512, rs2_data+512, 15)
+  TEST_VI_OP( 38,  vadd.vi, rd_data_vi+1024, rs2_data+1024, 15)
+  TEST_VI_OP( 39,  vadd.vi, rd_data_vi+1536, rs2_data+1536, 15)
+  TEST_VI_OP( 40,  vadd.vi, rd_data_vi+2048, rs2_data+2048, 15)
+  TEST_VI_OP( 41,  vadd.vi, rd_data_vi+2560, rs2_data+2560, 15)
+  TEST_VI_OP( 42,  vadd.vi, rd_data_vi+3072, rs2_data+3072, 15)
+  TEST_VI_OP( 43,  vadd.vi, rd_data_vi+3584, rs2_data+3584, 15)
+  TEST_VI_OP( 44,  vadd.vi, rd_data_vi+4096, rs2_data+4096, 15)
   RVTEST_SIGBASE( x20,signature_x20_2)
         
     #endif
@@ -3437,6 +3194,590 @@ rd_data_vv:
 .dword	0x5201314
 .dword	0x5201314
 .dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
 
 rd_data_vx:
 .dword	0x5201314
@@ -4015,40 +4356,560 @@ rd_data_vx:
 .dword	0x5201314
 .dword	0x5201314
 .dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
-.dword	0x5201314
 
 rd_data_vi:
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
+.dword	0x5201314
 .dword	0x5201314
 .dword	0x5201314
 .dword	0x5201314

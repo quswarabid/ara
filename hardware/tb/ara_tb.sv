@@ -92,8 +92,8 @@ module ara_tb;
    *  DRAM Initialization  *
    *************************/
 
-  typedef logic [AxiAddrWidth-1:0] addr_t;
-  typedef logic [AxiWideDataWidth-1:0] data_t;
+  typedef logic [AxiAddrWidth-1:0] addr_t;//64
+  typedef logic [AxiWideDataWidth-1:0] data_t;//512 for 16 lanes //256 for 8 lanes //128 for 4 lanes //64 for 2 lanes //32 for 1 lane
 
   initial begin : dram_init
     automatic data_t mem_row;
