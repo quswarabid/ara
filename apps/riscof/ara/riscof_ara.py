@@ -140,23 +140,30 @@ class ara(pluginTemplate):
           # substitute all variables in the compile command that we created in the initialize
           # function
           #cmd = self.compile_cmd.format(testentry['isa'].lower(), self.xlen, test, elf, compile_macros)
-          test = test + patch_path
-          print(test)
-          cmd = self.compile_cmd.format('rv64gv', self.xlen, test, elf, compile_macros)
+          test_plus_crt0S = test + patch_path
+          # riscv64-unknown-elf-nm my.elf | grep begin_signature | cut -d' ' -f1 | cut -b 9-16 > begin.signature
+          # riscv64-unknown-elf-nm my.elf | grep end_signature | cut -d' ' -f1 | cut -b 9-16 > end.signature
+          ara_top_dir_path = subprocess.getoutput("git rev-parse --show-toplevel") #specify the relative path to ara root if this plugin is placed outside of ara
+          symbol_cmd_begin_signature = ara_top_dir_path + "/install/riscv-gcc/bin/riscv64-unknown-elf-nm my.elf | grep begin_signature | cut -d' ' -f1 | cut -b 9-16 > begin.signature"
+          #symbol_cmd_begin_signature = ara_top_dir_path + "/install/riscv-gcc/bin/riscv64-unknown-elf-nm my.elf | grep begin_signature | cut -d' ' -f1 | cut -b 10-16"
+          #symbol_cmd_begin_signature = "echo $((16#" + symbol_cmd_begin_signature  + "))"
+          symbol_cmd_end_signature = ara_top_dir_path + "/install/riscv-gcc/bin/riscv64-unknown-elf-nm my.elf | grep end_signature | cut -d' ' -f1 | cut -b 9-16 > end.signature"
+          cmd = self.compile_cmd.format('rv64gv', self.xlen, test_plus_crt0S, elf, compile_macros)
 	  # if the user wants to disable running the tests and only compile the tests, then
 	  # the "else" clause is executed below assigning the sim command to simple no action
 	  # echo statement.
+	  #temp-DUT-ara.signature
           if self.target_run:
             # set up the simulation command. Template is for spike. Please change.
             #simcmd = self.dut_exe + ' --isa={0} +signature={1} +signature-granularity=4 {2}'.format(self.isa, sig_file, elf)
             simcmd = self.dut_exe + ' -l ram,{0}'.format(elf) + ',elf' + ' 1>stdout 2>stderr'	#build/verilator/Vara_tb_verilator  -l ram,/home/quswarabid/ara/apps/bin/rv64uv-ara-vadd,elf
-            print(simcmd)
+            #print(simcmd)
 
           else:
             simcmd = 'echo "NO RUN"'
 
           # concatenate all commands that need to be executed within a make-target.
-          execute = '@cd {0}; {1}; {2};'.format(testentry['work_dir'], cmd, simcmd)
+          execute = '@cd {0}; {1}; {2}; {3}; {4};'.format(testentry['work_dir'], cmd, symbol_cmd_begin_signature, symbol_cmd_end_signature, simcmd)
 
           # create a target. The makeutil will create a target with the name "TARGET<num>" where num
           # starts from 0 and increments automatically for each new target that is added
@@ -168,79 +175,10 @@ class ara(pluginTemplate):
 
       # once the make-targets are done and the makefile has been created, run all the targets in
       # parallel using the make command set above.
-      make.execute_all(self.work_dir)
+      make.execute_all(self.work_dir, timeout=30000)
 
       # if target runs are not required then we simply exit as this point after running all
       # the makefile targets.
       if not self.target_run:
           raise SystemExit(0)
 
-#The following is an alternate template that can be used instead of the above.
-#The following template only uses shell commands to compile and run the tests.
-
-#    def runTests(self, testList):
-#
-#      # we will iterate over each entry in the testList. Each entry node will be referred to by the
-#      # variable testname.
-#      for testname in testList:
-#
-#          logger.debug('Running Test: {0} on DUT'.format(testname))
-#          # for each testname we get all its fields (as described by the testList format)
-#          testentry = testList[testname]
-#
-#          # we capture the path to the assembly file of this test
-#          test = testentry['test_path']
-#
-#          # capture the directory where the artifacts of this test will be dumped/created.
-#          test_dir = testentry['work_dir']
-#
-#          # name of the elf file after compilation of the test
-#          elf = 'my.elf'
-#
-#          # name of the signature file as per requirement of RISCOF. RISCOF expects the signature to
-#          # be named as DUT-<dut-name>.signature. The below variable creates an absolute path of
-#          # signature file.
-#          sig_file = os.path.join(test_dir, self.name[:-1] + ".signature")
-#
-#          # for each test there are specific compile macros that need to be enabled. The macros in
-#          # the testList node only contain the macros/values. For the gcc toolchain we need to
-#          # prefix with "-D". The following does precisely that.
-#          compile_macros= ' -D' + " -D".join(testentry['macros'])
-#
-#          # collect the march string required for the compiler
-#          marchstr = testentry['isa'].lower()
-#
-#          # substitute all variables in the compile command that we created in the initialize
-#          # function
-#          cmd = self.compile_cmd.format(marchstr, self.xlen, test, elf, compile_macros)
-#
-#          # just a simple logger statement that shows up on the terminal
-#          logger.debug('Compiling test: ' + test)
-#
-#          # the following command spawns a process to run the compile command. Note here, we are
-#          # changing the directory for this command to that pointed by test_dir. If you would like
-#          # the artifacts to be dumped else where change the test_dir variable to the path of your
-#          # choice.
-#          utils.shellCommand(cmd).run(cwd=test_dir)
-#
-#          # for debug purposes if you would like stop the DUT plugin after compilation, you can
-#          # comment out the lines below and raise a SystemExit
-#
-#          if self.target_run:
-#            # build the command for running the elf on the DUT. In this case we use spike and indicate
-#            # the isa arg that we parsed in the build stage, elf filename and signature filename.
-#            # Template is for spike. Please change for your DUT
-#            execute = self.dut_exe + ' --isa={0} +signature={1} +signature-granularity=4 {2}'.format(self.isa, sig_file, elf)
-#            logger.debug('Executing on Spike ' + execute)
-#
-#          # launch the execute command. Change the test_dir if required.
-#          utils.shellCommand(execute).run(cwd=test_dir)
-#
-#          # post-processing steps can be added here in the template below
-#          #postprocess = 'mv {0} temp.sig'.format(sig_file)'
-#          #utils.shellCommand(postprocess).run(cwd=test_dir)
-#
-#      # if target runs are not required then we simply exit as this point after running all
-#      # the makefile targets.
-#      if not self.target_run:
-#          raise SystemExit
