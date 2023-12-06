@@ -36,7 +36,8 @@ class spike(pluginTemplate):
         # test-bench produced by a simulator (like verilator, vcs, incisive, etc). In case of an iss or
         # emulator, this variable could point to where the iss binary is located. If 'PATH variable
         # is missing in the config.ini we can hardcode the alternate here.
-        self.dut_exe = "spike"
+        ara_top_dir_path = subprocess.getoutput("git rev-parse --show-toplevel") #specify the relative path to ara root if this plugin is placed outside of ara
+        self.dut_exe = ara_top_dir_path + "/install/riscv-isa-sim/bin/spike"
 
         # Number of parallel jobs that can be spawned off by RISCOF
         # for various actions performed in later functions, specifically to run the tests in
