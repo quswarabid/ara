@@ -1,3 +1,5 @@
 1. Go to ara/hardware/ and run `make verilate` with the modified testbench files that came with this commit 
-2. Go to ara/apps/riscof/ and run `riscof run --config=config.ini --suite=test_suite --env=env` given the `riscv-gcc` is installed in `ara/install` dir with toolchain from 10x_scratch branch alongwith the modifications required to use `GCC` instead of `LLVM` toolchain
-3. Enjoy debugging the failing tests now!
+2. Got to ara root dir: `ara/` and make riscv-isa-sim after coming to this branch since riscof requires to use spike with `--enable-commitlog` and by default ara doesn't build it that way
+3. This branch (riscof_dev)[https://github.com/quswarabid/ara/tree/riscof_dev] have already got the required commits to enable using GCC instead of by-default-used LLVM toolchain. You can get it from (10x_scratch branch)[https://github.com/10x-Engineers/ara/tree/10x_scratch]
+4. Make sure you have installed riscof and other related modules. You can install them from pip by running `pip install riscof riscv-ctg riscv-isac riscv-config` to install all four related modules
+5. Go to ara/apps/riscof/ and run `riscof run --config=config.ini --suite=test_suite --env=env` given the `riscv-gcc` is installed in `ara/install` dir with toolchain from 10x_scratch branch alongwith the modifications required to use `GCC` instead of `LLVM` toolchain
