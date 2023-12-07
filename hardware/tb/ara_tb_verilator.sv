@@ -54,8 +54,8 @@ module ara_tb_verilator #(
   
   final begin
     int memory [100000];
-    integer read_address = $fopen("begin.signature", "r");
-    integer sigdump= $fopen("DUT-ara.signature", "w");
+    //int read_address = $fopen("begin.signature", "r");
+    //int sigdump = $fopen("DUT-ara.signature", "w");
     reg [31:0] begin_signature [0:1];
     reg [31:0] end_signature [0:1];
     
@@ -64,15 +64,15 @@ module ara_tb_verilator #(
     $display("%h", begin_signature[0]);
     begin_signature[0] = ((begin_signature[0] - 32'h8000_0000)/4)-1;
     $display("%h", begin_signature[0]);
-    $fclose(read_address);
+    //$fclose(read_address);
     
-    read_address = $fopen("end.signature", "r");
+    //read_address = $fopen("end.signature", "r");
     //$fread(end_signature, read_address);
     $readmemh("end.signature", end_signature);
     $display("%h", end_signature[0]);
     end_signature[0] = ((end_signature[0] - 32'h8000_0000)/4)-1;
     $display("%h", end_signature[0]);
-    $fclose(read_address);
+    //$fclose(read_address);
     
     for (reg [31:0] iter = 0; iter < end_signature[0]; iter++) begin
       memory[(4*iter)+0] = dut.i_ara_soc.i_dram.sram[iter][31:0];
@@ -81,17 +81,19 @@ module ara_tb_verilator #(
       memory[(4*iter)+3] = dut.i_ara_soc.i_dram.sram[iter][127:96];
     end
     
-    //for (int iter = 64'he110-1; iter < 64'h10d50-1; iter++) begin
-    for (reg [31:0] iter = begin_signature[0]; iter < end_signature[0]; iter++) begin
+    //int memory [];
+    //memory = new[end_signature[0] - begin_signature[0]];
+    $writememh("DUT-ara.signature", memory, begin_signature[0], end_signature[0]-1);
+    /*for (reg [31:0] iter = begin_signature[0]; iter < end_signature[0]; iter++) begin
       $fwrite(sigdump, "%x\n",memory[iter]);
       //$display("%x\t%d\n",iter,iter);
-    end
+    end*/
     
     /*for (int iter = 0; iter < 64'h6000; iter++) begin
       $fwrite(sigdump, "%x\n%x\n%x\n%x\n",dut.i_ara_soc.i_dram.sram[iter][31:0],dut.i_ara_soc.i_dram.sram[iter][63:32],dut.i_ara_soc.i_dram.sram[iter][95:64],dut.i_ara_soc.i_dram.sram[iter][127:96]);
     end*/
     
-    $fclose(sigdump);
+    //$fclose(sigdump);
   end
 
 endmodule : ara_tb_verilator

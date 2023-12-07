@@ -201,8 +201,7 @@ $(veril_library)/V$(veril_top): $(config_file) Makefile ../Bender.yml $(shell fi
   -Wno-UNSIGNED                                                                 \
   -Wno-WIDTH                                                                    \
   -Wno-WIDTHCONCAT                                                              \
-  -Wno-ENUMVALUE                                                                \
-  -Wno-COMBDLY                                                                  \
+  -Wno-COMBDLY \
   --hierarchical                                                                \
   tb/verilator/waiver.vlt                                                       \
   --Mdir $(veril_library)                                                       \
