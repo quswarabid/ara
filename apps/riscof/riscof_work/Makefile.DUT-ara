@@ -1,5 +1,0 @@
-
-
-.PHONY : TARGET0
-TARGET0 :
-	@cd /home/quswarabid/ara/apps/riscof/riscof_work/vadd.S/dut; /home/quswarabid/ara/install/riscv-gcc/bin/riscv64-unknown-elf-gcc -march=rv64gv          -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles -g         -T /home/quswarabid/ara/apps/riscof/ara/env/link.ld         -I /home/quswarabid/ara/apps/riscof/ara/env/         -I /home/quswarabid/ara/apps/riscof/env /home/quswarabid/ara/apps/riscof/test_suite/vadd.S /home/quswarabid/ara/apps/common/crt0.S  -o my.elf  -DTEST_CASE_1=True -DXLEN=64 -DFLEN=64 -mabi=lp64; /home/quswarabid/ara/install/riscv-gcc/bin/riscv64-unknown-elf-nm my.elf | grep begin_signature | cut -d' ' -f1 | cut -b 9-16 > begin.signature; /home/quswarabid/ara/install/riscv-gcc/bin/riscv64-unknown-elf-nm my.elf | grep end_signature | cut -d' ' -f1 | cut -b 9-16 > end.signature; /home/quswarabid/ara/hardware/build/verilator/Vara_tb_verilator -l ram,my.elf,elf 1>stdout 2>stderr;

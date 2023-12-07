@@ -156,7 +156,7 @@ class ara(pluginTemplate):
           if self.target_run:
             # set up the simulation command. Template is for spike. Please change.
             #simcmd = self.dut_exe + ' --isa={0} +signature={1} +signature-granularity=4 {2}'.format(self.isa, sig_file, elf)
-            simcmd = self.dut_exe + ' -l ram,{0}'.format(elf) + ',elf' + ' 1>stdout 2>stderr'	#build/verilator/Vara_tb_verilator  -l ram,/home/quswarabid/ara/apps/bin/rv64uv-ara-vadd,elf
+            simcmd = self.dut_exe + ' -t -l ram,{0}'.format(elf) + ',elf' + ' 1>stdout 2>stderr'	#build/verilator/Vara_tb_verilator  -l ram,/home/quswarabid/ara/apps/bin/rv64uv-ara-vadd,elf
             #print(simcmd)
 
           else:
